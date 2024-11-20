@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 70%;
+
+}
+body{
+    height: 100vh;
+
+}
+
+
+.navbar{
+    display: flex;
+    position: relative;
+    top: 0.7em;
+
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+/* ///NAVBAR MENU BUTTONS/// */
+.navbar__menu--button{
+    position: relative;
+    cursor: pointer;
+    top: 1.5em;
+    margin-left: 20px;
+  
+    
+}
+
+
+/* LOGO */
+.navbar__logo{
+    position: relative;
+    left: 1.5em;
+}
+
+.keep{
+    position: relative;
+    bottom: 0.8em;
+    font-size: 20px;
+    color: #5f6368;
+}
+
+.navbar__search{
+    display: flex;
+    position: relative;
+    top: 0.6em;
+    left: 10em;
+}
+
+.search{
+    height: 3.5em;
+    width: 30em;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+    border: grey;
+    box-shadow: 2px 2px 5px 1px rgba(51, 51, 51, 0.8);
+    padding-left: 2.5em;
+
+    
+}
+
+.search--button{
+    position: relative;
+    left: 1.4em;
+    top: 0.2em;
+}
+
+.navbar__item{
+    /* display: flex; */
+    position: relative;
+    left: 60em;
+    top: 2.6em;
+
+    
+
+}
+.navbar__buttons{
+    padding: 5px;
+    font-size: 2em;
+    color: #5f6368;
+}
+
+/* MENU */
+.container{
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    width: 60px; 
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.menu__item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu__text{
+    display: none;
+    margin-left: 10px;
+    font-size: 1.5em;
+};
+
+.sidebar--expanded .menu__text {
+    display: inline;
+}
+
+.main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 18em;
+
+}
+
+.main-content--input{
+    border: none;
+    border-radius: 0.4em;
+    height: 3em;
+    width: 35em;
+    padding-right: 5em;
+    box-shadow: 5px 5px 10px 2px rgba(51, 51, 51, 0.8);
+    padding-left: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+.main-content--buttons{
+    position: relative;
+    left: 18em;
+    bottom: 4em;
+    
+}
+
+
+

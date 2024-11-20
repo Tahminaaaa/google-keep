@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar__menu--button">
+            <span class="material-icons">menu</span>
+        </div>
+        <div class="navbar__logo">
+            <img src="google keep logo.png" alt="googlekeeplogo">
+            <span class="keep">Keep</span>
+        </div>
+        <div class="navbar__search">
+            <ion-icon class="search--button" name="search-outline"></ion-icon>
+            <input class="search" type="search" placeholder="Search">
+            
+        </div>
+
+        <div class="navbar__item">
+            <ion-icon class="navbar__buttons" name="refresh-outline"></ion-icon>
+            <ion-icon class="navbar__buttons" name="grid-outline"></ion-icon>
+            <ion-icon class="navbar__buttons"  name="moon-outline"></ion-icon>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+        <div class="conatiner">
+            <div class="sidebar">
+                <div class="menu__item">
+                    <ion-icon class="menu__button" name="document-outline"></ion-icon>
+                    <span class="menu__text">Notes</span>
+                </div>
+                <div class="menu__item">
+                    <ion-icon class="menu__button" name="notifications-outline"></ion-icon>
+                    <span class="menu__text">Notifications</span>
+                </div>
+                <div class="menu__item">
+                    <ion-icon class="menu__button" name="create-outline"></ion-icon>
+                    <span class="menu__text">Edit Labels</span>
+                </div>
+                <div class="menu__item">
+                    <ion-icon class="menu__button" name="archive-outline"></ion-icon>
+                    <span class="menu__text">Archive</span>
+                </div> 
+                <div class="menu__item">
+                    <ion-icon class="menu__button" name="trash-outline"></ion-icon>
+                    <span class="menu__text">Deleted</span>
+                </div>
+                
+            </div>
+
+            <div class="main-content">
+                <input class="main-content--input" type="text" placeholder="Take a note...">
+                <div class="main-content--buttons">
+                    <ion-icon class="check-button" name="checkbox-outline"></ion-icon>
+                    <ion-icon class="draw-button" name="pencil-outline"></ion-icon>
+                    <ion-icon class="image-button" name="image-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- <div class="container__title">
+            <input type="text" placeholder="Title">
+        </div>
+        <div class="container__note">
+            <input type="text" placeholder="Take a note">     
+        </div> -->
+
+        <!-- <div class="container__buttons">
+            <button class="container__buttons__remind"></button>
+            <button class="container__buttons__collab"></button>
+            <button class="container__buttons__background--color"></button>
+            <button class="container__buttons__image"></button>
+            <button class="container__buttons__archive"></button>
+            <button class="container__buttons__undo"></button>
+            <button class="container__buttons__redo"></button>
+            <button class="container__buttons__close">Close</button>
+            <button class="container__buttons__pin"></button>
+        </div> -->
+    </div>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</body>
+</html>
