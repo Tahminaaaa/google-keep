@@ -19,6 +19,7 @@ const menuItems = document.querySelectorAll(".menu__item .menu__text");
 const darkBtn = document.querySelector(".dark-button");
 const lightBtn = document.querySelector(".light-button")
 const body = document.body;
+const refreshBtn = document.querySelector(".refresh-button")
 
 function collapseSidebar() {
 
@@ -59,3 +60,8 @@ lightBtn.classList.toggle("hidden")
 
 darkBtn.addEventListener("click", toggleTheme);
 lightBtn.addEventListener("click", toggleTheme);
+
+function refreshNotes(){
+    window.location.reload()
+}
+refreshBtn.addEventListener("click", refreshNotes)
