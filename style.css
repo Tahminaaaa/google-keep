@@ -9,12 +9,20 @@ html{
     font-size: 70%;
 
 }
-body{
+body {
     height: 100vh;
-
+    background: var(--bg);
+    color: var(--color);
 }
 
-
+:root{
+    --bg: #fafaf3;
+    --color: #0a0a0a;
+}
+.dark, ion-icon{
+    --bg: #0A0A0A;
+    --color: #ffffff;
+}
 .navbar{
     display: flex;
     position: relative;
@@ -74,21 +82,20 @@ body{
     font-size: 2em;
 }
 
-.navbar__item{
-    /* display: flex; */
-    position: relative;
-    left: 60em;
-    top: 2.6em;
 
-    
 
-}
 .navbar__buttons{
-    padding: 5px;
-    font-size: 2em;
+    position: relative;
+    font-size: 1.5em;
     color: #5f6368;
+    left: 20em;
+    top: 1em;
+    cursor: pointer;
 }
 
+.hidden{
+    display: none !important;
+}
 /* MENU */
 .container{
     height: 100vh;
@@ -111,7 +118,7 @@ body{
 .menu__text{
     display: none;
     margin-left: 10px;
-    font-size: 1em;
+    font-size: 0.7em;
 };
 
 .sidebar--expanded .menu__text {

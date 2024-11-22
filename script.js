@@ -13,16 +13,17 @@
 //   }))
 
 
-const btnMenu = document.querySelector('.navbar__menu--button');
-const sidebar = document.querySelector('.sidebar');
-const menuItems = document.querySelectorAll('.menu__item .menu__text');
-
+const btnMenu = document.querySelector(".navbar__menu--button");
+const sidebar = document.querySelector(".sidebar");
+const menuItems = document.querySelectorAll(".menu__item .menu__text");
+const darkBtn = document.querySelector(".dark-button");
+const lightBtn = document.querySelector(".light-button")
+const body = document.body;
 
 function collapseSidebar() {
 
     sidebar.style.width = '60px';
 
-  
     menuItems.forEach(item => {
         item.style.display = 'none';
     });
@@ -48,5 +49,13 @@ btnMenu.addEventListener('click', () => {
     }
 });
 
+function toggleTheme(){
+    body.classList.toggle("dark");
 
 
+darkBtn.classList.toggle("hidden");
+lightBtn.classList.toggle("hidden")
+}
+
+darkBtn.addEventListener("click", toggleTheme);
+lightBtn.addEventListener("click", toggleTheme);
