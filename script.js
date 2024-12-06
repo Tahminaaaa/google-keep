@@ -19,7 +19,11 @@ const menuItems = document.querySelectorAll(".menu__item .menu__text");
 const darkBtn = document.querySelector(".dark-button");
 const lightBtn = document.querySelector(".light-button")
 const body = document.body;
-const refreshBtn = document.querySelector(".refresh-button")
+const refreshBtn = document.querySelector(".refresh-button");
+const noteInput = document.querySelector(".main-content--input");
+const noteTitle = document.querySelector(".main-content--title");
+const mainContent = document.querySelector(".main-content")
+
 
 function collapseSidebar() {
 
@@ -64,4 +68,34 @@ lightBtn.addEventListener("click", toggleTheme);
 function refreshNotes(){
     window.location.reload()
 }
-refreshBtn.addEventListener("click", refreshNotes)
+refreshBtn.addEventListener("click", refreshNotes);
+
+function expandInput(){
+    // noteInput.classList.toggle("expanded")
+    // if (noteInput.classList.contains("expanded")) {
+    //     noteTitle.style.display = "block"; 
+    // } else {
+    //     noteTitle.style.display = "none"; 
+    // }
+    noteInput.classList.add("expanded");
+    noteTitle.style.display = "grid"; 
+    noteTitle.style.opacity = "1";    
+    noteTitle.style.transform = "translateY(0)";
+
+
+}
+function resetInput(){
+    noteInput.classList.remove("expanded");
+    noteTitle.style.display = "none"; 
+    noteTitle.style.opacity = "0";    
+    noteTitle.style.transform = "translateY(-20px)"; 
+}
+noteInput.addEventListener("click", expandInput)
+
+document.addEventListener('click', (event)=> {
+    if(!noteInput.contains(event.target) && !noteTitle.contains(event.target)){
+        resetInput()
+    }
+ 
+});
+

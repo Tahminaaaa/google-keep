@@ -57,13 +57,16 @@
                 
             </div>
 
-            <div class="main-content">
-                <input class="main-content--input" type="text" placeholder="Take a note...">
-                <div class="main-content--buttons">
-                    <ion-icon class="check-button" name="checkbox-outline"></ion-icon>
-                    <ion-icon class="draw-button" name="pencil-outline"></ion-icon>
-                    <ion-icon class="image-button" name="image-outline"></ion-icon>
-                </div>
+        <div class="main-content">
+            <input class="main-content--title" type="text" placeholder="Title" v-model="title">
+            <span class="input-group-text">-</span>
+            <input class="main-content--input" type="text" placeholder="Take a note...">
+                   
+            <div class="main-content--buttons">
+                <ion-icon class="check-button" name="checkbox-outline"></ion-icon>
+                <ion-icon class="draw-button" name="pencil-outline"></ion-icon>
+                <ion-icon class="image-button" name="image-outline"></ion-icon>
+               
             </div>
         </div>
     
@@ -86,7 +89,7 @@
             <button class="container__buttons__close">Close</button>
             <button class="container__buttons__pin"></button>
         </div> -->
-    </div>
+
 <script src="script.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
